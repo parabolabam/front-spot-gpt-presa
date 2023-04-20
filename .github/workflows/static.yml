@@ -24,8 +24,14 @@ jobs:
     - name: Build
       run: npm run bundle
       
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v4
+    - name: GH Pages deploy
+      # You may pin to the exact commit or the version.
+      # uses: Cecilapp/GitHub-Pages-deploy@64837616f5938346d4be701112e6941195bfd54a
+      uses: Cecilapp/GitHub-Pages-deploy@3.2.1
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./bundled
+         # A verified email.
+        email: 'sorokinvladislav1402@gmail.com'
+          # Where static files are.
+        build_dir: ./bundled
+         # Which branch to push files.
+        branch: 'gh-pages'
