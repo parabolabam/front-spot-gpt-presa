@@ -165,7 +165,7 @@
         listenToCommands();
 
         const commands = {
-          whoami: async () => fetch()
+          whoami: async () => fetch('https://github.com/parabolabam')
         }
 
         function listenToCommands() {
@@ -182,10 +182,10 @@
           });
         }
 
-        function executeCommand(command) {
+        async function executeCommand(command) {
           // This is a placeholder function that simply returns the command itself.
           // Replace this with your own command execution code.
-          return command;
+          return await commands[command]();
         }
       </script>
     </section>
