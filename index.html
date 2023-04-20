@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shower Presentation Engine</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@shower/material/styles/styles.css"
+    />
+    <style>
+      :root {
+        --active-slide-sahadow: tomato;
+      }
+
+      .shower {
+        --slide-ratio: calc(16 / 9);
+        --color-key: #63c2f8;
+      }
+
+      .front-spot__caption {
+        background-color: var(--color-key);
+        background-image: none;
+      }
+
+      .front-spot__header {
+        display: flex;
+        justify-content: space-between;
+        place-items: center;
+        width: calc(100% - 100px);
+      }
+
+      .slide {
+        display: flex;
+        place-items: center;
+        flex-direction: column;
+        pointer-events: all !important;
+      }
+
+      /* .slide:after {
+        counter-increment: slide;
+        content: counter(slider);
+        position: absolute;
+        top: -18em;
+        right: -38em;
+        background: no-repeat center/5% url("images/front-spot-logo.jpg");
+      } */
+
+      .shower.full .slide {
+        pointer-events: all !important;
+      }
+
+      a {
+        pointer-events: all;
+      }
+    </style>
+  </head>
+
+  <body class="shower list">
+    <header class="caption front-spot__caption">
+      <div class="front-spot__header">
+        <h1>GhatGPT - friend or foe?</h1>
+        <img
+          src="images/front-spot-logo.jpg"
+          width="150px"
+          height="150px"
+          alt="front-spot-logo"
+        />
+      </div>
+    </header>
+
+    <section class="slide">
+      whoami
+
+      <ol>
+        <li>Software engineer</li>
+        <li>Frontend </li>
+      </ol>
+    </section>
+
+    <section class="slide">
+      <!-- Create your first slide -->
+      <style>
+        .chat-gpt {
+          display: flex;
+          place-items: center;
+          flex-direction: column;
+        }
+      </style>
+      <div class="chat-gpt">
+        <h1>GhatGPT ?!</h1>
+
+        <img
+          src="https://th.bing.com/th/id/OIP.SJIDESLaRlT9C3Fj-WfGlQHaFY?pid=ImgDet&rs=1"
+          alt="Jacky Chan"
+        />
+      </div>
+    </section>
+
+    <section class="slide">
+      <!-- Create your first slide -->
+      Let's ask itself:
+      <img
+        width="300px"
+        height="300px"
+        src="images/chat-bragging.png"
+        alt="chat-bragging"
+      />
+    </section>
+
+    <section class="slide">
+      <!-- Create your first slide -->
+
+      What is that saying?
+      <img
+        src="https://i.imgflip.com/3mcirk.png"
+        alt="Chan cannot see splendidly"
+      />
+    </section>
+
+    <section class="slide">
+      <!-- Create your first slide -->
+
+      <img
+        style="transform: scale(2.5)"
+        width="200px"
+        height="200px"
+        src="images/chat-bragging-main-part.png"
+        alt="chat-bragging-main-part"
+      />
+    </section>
+
+    <section class="slide">
+      <!-- Create your first slide -->
+
+      <div>Sooooo...</div>
+
+      <div>
+        Frankly, ChatGPT, AFAIK, is like 5-7 y.o. kid with encyclopedia in their
+        brain:
+      </div>
+
+      <ol>
+        <li>It can only walk through texts it's been trained on;</li>
+        <li>It cannot process logical chains like humans do;</li>
+        <li>This model is just like the very advanced if-else statement;</li>
+      </ol>
+    </section>
+
+    <section class="slide">
+      Stolen explanation
+      <p>Click <a href="https://www.example.com">here</a> to visit example.com</p>
+      <!-- <figure>
+        <figcaption class="white">
+          <a
+            href="https://docs.google.com/presentation/d/1BlXR51CmNxxUnDDX87jF2D4o74siGI-ZbEVXj77HY1Q/edit#slide=id.g216be951bb2_0_53"
+            target="_blank"
+            rel="noopener noreferrer"
+            >How it works</a
+          >
+        </figcaption>
+      </figure> -->
+    </section>
+
+    <section class="slide">
+      And instead of afterwords useful isnpiring and soothing links
+      <ol>
+        <li>
+          <span>Why you should not be scared</span>
+          <a
+            href="https://www.codecademy.com/resources/blog/can-chatgpt-ai-teach-you-to-code/?utm_source=twitter&utm_medium=organic-social&utm_content=tw_04_13_23_chatgpt_teach_you_coding"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Why you shoul not be scared
+          </a>
+        </li>
+      </ol>
+    </section>
+
+    <footer class="badge">
+      <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="node_modules/@shower/core/dist/shower.js"></script>
+    <!-- Copyright © 2023 Yours Truly, Famous Inc. -->
+  </body>
+</html>
